@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="test_mediaQueries.css">
+
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Sairam Soundiraradjane</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skillset">Skillset</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Sairam Soundiraradjane</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skillset" onclick="toggleMenu()">Skillset</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#publications" onclick="toggleMenu()">Publications</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container profile_pic">
+            <img src="./assets/cropped_circle_image.png" alt="Sairam Profile Photo">
+        </div>
+        <div class="section__text profile_text">
+            <p class="section__text_p1">Hello, I'm</p>
+            <h1 class="title">Sairam</h1>
+            <p class="section__text_p2">B.tech-Computer Science</p>
+            <p class="section__text_p2">NIT, Puducherry</p>
+            <br/>
+            <div class="btn-container">
+                <button
+                class="btn btn-color-2"
+                onclick="window.open('./assets/SAIRAM_S_RESUME (1).pdf')"
+                >Resume</button>
+            
+                <button
+                class="btn btn-color-1"
+                onclick="location.href='./#contact'"
+                >Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn Profile"  class='icon' onclick="location.href='https://linkedin.com/in/sairam-soundiraradjane'">
+                <img src="./assets/github.png" alt="My github Profile"  class='icon' onclick="location.href='https://github.com/Cyborg-2904'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+      <p class="section__text_p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/image.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>6+ months <br />Industrial experience</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Tech Computer Science Engineering<br />NIT Puducherry (2022–2026)</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p style="text-align: justify;">
+              Computer Science student with a deep interest in learning, problem-solving, and exploring diverse fields. Passionate about technology, but equally drawn to reading, writing, philosophy, and social sciences. Strong believer in continuous growth, open-minded thinking, and meaningful collaboration. Enjoys analyzing complex ideas, engaging in thoughtful discussions, and contributing to impactful projects. Combines technical curiosity with a creative and disciplined mindset. Values clarity and purpose-driven work in both academic and personal pursuits.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#skillset'">
+    </section>
+    <!--<section id="experience">
+      <p class="section__text_p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon">
+                <h3>HTML</h3>
+                <p>Experienced</p>
+              </article>
+              <article>
+                <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon">
+                <h3>CSS</h3>
+                <p>Experienced</p>
+              </article>
+              <article>
+                <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon">
+                <h3>JavaScript</h3>
+                <p>Intermediate</p>
+              </article>
+              <article>
+                <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon">
+                <h3>React</h3>
+                <p>Basic</p>
+              </article>
+              <article>
+                <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon">
+                <h3>Angular JS</h3>
+                <p>Basic</p>
+              </article>
+              <article>
+                <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon">
+                <h3>TypeScript</h3>
+                <p>Intermediate</p>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon">
+                <h3>PostgreSQL</h3>
+                <p>Basic</p>
+              </article>
+              <article>
+                <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon">
+                <h3>Node JS</h3>
+                <p>Intermediate</p>
+              </article>
+              <article>
+                <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon">
+                <h3>Git</h3>
+                <p>Intermediate</p>
+              </article>
+              <article>
+                <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon">
+                <h3>React</h3>
+                <p>Basic</p>
+              </article>
+              <article>
+                <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon">
+                <h3>Angular JS</h3>
+                <p>Basic</p>
+              </article>
+              <article>
+                <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon">
+                <h3>TypeScript</h3>
+                <p>Intermediate</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#projects'">
+    </section>-->
+    <section id="skillset">
+    <p class="section__text_p1">Explore My</p>
+    <h1 class="title">Technical Skills</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <!--<h2 class="experience-sub-title">Technical Skills</h2>-->
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Skill icon" class="icon">
+              <h3>Python</h3>
+              <p>Proficient</p>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skill icon" class="icon">
+              <h3>Java</h3>
+              <p>Proficient</p>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skill icon" class="icon">
+              <h3>JavaScript</h3>
+              <p>Advanced</p>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skill icon" class="icon">
+              <h3>HTML & CSS</h3>
+              <p>Advanced</p>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skill icon" class="icon">
+              <h3>React</h3>
+              <p>Intermediate</p>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skill icon" class="icon">
+              <h3>Flutter</h3>
+              <p>Intermediate</p>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skill icon" class="icon">
+              <h3>Node.js</h3>
+              <p>Intermediate</p>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skill icon" class="icon">
+              <h3>MySQL</h3>
+              <p>Basic</p>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skill icon" class="icon">
+              <h3>Qiskit</h3>
+              <p>Intermediate</p>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skill icon" class="icon">
+              <h3>Jupyter Notebook</h3>
+              <p>Intermediate</p>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skill icon" class="icon">
+              <h3>Figma</h3>
+              <p>Intermediate</p>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skill icon" class="icon">
+              <h3>Git</h3>
+              <p>Intermediate</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+  <p class="section__text_p1">Where I've Worked</p>
+  <h1 class="title">Experience</h1>
+  <div class="experience-details-container">
+    <div class="about-containers">
+
+      <!-- Internship 1 -->
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="./assets/xai-1.webp"
+            alt="Internship 1"
+            class="project-img">
+        </div>
+        <h2 class="experience-sub-title project-title">Explainable AI Intern</h2>
+        <p><strong>NIT Puducherry</strong><br>JULY 2023-NOV 2023</p>
+        <p>Implemented machine learning algorithms with Explainable AI (XAI) in image processing, emphasizing transparency.</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn"
+            onclick="window.open('https://github.com/Cyborg-2904')">GitHub</button>
+        </div>
+      </div>
+
+      <!-- Internship 2 -->
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="./assets/ogImage-1200x630.png"
+            alt="Internship 2"
+            class="project-img">
+        </div>
+        <h2 class="experience-sub-title project-title">Product Developer Intern</h2>
+        <p><strong>GALLABOX</strong><br>APR 2024-JUL 2024</p>
+        <p>Integrated WhatsApp API with Gallabox and Pipedrive to enable realtime messaging and automate data synchronization.</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn"
+            onclick="window.open('https://github.com/Cyborg-2904')">GitHub</button>
+          <button class="btn btn-color-2 project-btn"
+            onclick="window.open('./assets/Adobe Scan 25-Jun-2024.pdf')">Certificate</button>
+        </div>
+      </div>
+
+      <!-- Internship 3 -->
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="./assets/images.jpeg"
+            alt="Internship 3"
+            class="project-img">
+        </div>
+        <h2 class="experience-sub-title project-title">Web Development Intern</h2>
+        <p><strong>OneYes InfoTech Solutions</strong><br>DEC 2024-JAN 2025</p>
+        <p>Designed and built an e-commerce website from scratch using HTML, CSS, JavaScript ,figma for development as part of a web dev team.</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn"
+            onclick="window.open('https://github.com/Cyborg-2904/gallabox-intern')">GitHub</button>
+          <button class="btn btn-color-2 project-btn"
+            onclick="window.open('./assets/Oneyes certificate.pdf')">Certificate</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <img
+    src="./assets/arrow.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+      <p class="section__text_p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+              src="./assets/large.png"
+              alt="project 1"
+              class="project-img">
+            </div>
+            <h2 class="experience-sub-title project-title">Quantum Machine Learning</h2>
+            <p>Implemented QML algorithms to design cybersecurity solutions by merging quantum computing and machine learning.</p>
+            <br/>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" 
+              onclick="location.href='https://github.com/Cyborg-2904">Github</button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+              src="./assets/ey9Ok.png"
+              alt="project 2"
+              class="project-img">
+            </div>
+            <h2 class="experience-sub-title project-title">Hyperspectral Band Selection using QML</h2>
+            <p>Applied dimensionality reduction, classification and improvement in hyperspectral image datasets.</p>
+            <br/>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" 
+              onclick="location.href='https://github.com/Cyborg-2904">Github</button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container" style="height: 128.3; width:228.3 ;">
+              <img 
+              src="./assets/attention_research_1.webp"
+              alt="project 3"
+              class="project-img">
+            </div>
+            <h2 class="experience-sub-title project-title">Protein Secondary Structure Prediction</h2>
+            <p>Building quantum-integrated transformer models to predict protein structures from amino acid sequences.</p>
+            <br/>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" 
+              onclick="location.href='https://github.com/Cyborg-2904">Github</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#publications'">
+    </section>
+    <!--<section id="contact">
+      <p class="section__text_p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+          src="./assets/email.png"
+          alt="email icon"
+          class="icon contact-icon email-icon">
+          <p><a href="mailto:sairam2k04@gmail.com">sairam2k04@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+          src="./assets/linkedin.png"
+          alt="linkedin icon"
+          class="icon contact-icon">
+          <p><a href="https://www.linkedin.com/in/sairam-soundiraradjane/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>-->
+    <section id="publications">
+  <p class="section__text_p1">My Research Work</p>
+  <h1 class="title">Publications</h1>
+  <div class="experience-details-container">
+    <div class="about-containers">
+
+      <!-- Publication Card -->
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="./assets/computers-14-00058-g001.png"
+            alt="Publication Cover"
+            class="project-img">
+        </div>
+        <h2 class="experience-sub-title project-title">
+          IOT Botnet Detection using a Hybrid of CNN-LSTM with Blockchain
+        </h2>
+        <p><strong>IEEE ICCIRT 2024</strong></p>
+        <p>
+          Built a CNN-LSTM model with blockchain integration for IoT botnet detection. 
+          Used SMOTE to improve detection of minority classes and ensured secure, 
+          tamper-proof logging with SHA-256.
+        </p>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn"
+            onclick="window.open('./assets/IOT_Botnet_Detection_using_a_Hybrid_of_CNN-LSTM_with_Blockchain.pdf')">
+            View Paper
+          </button>
+          <button class="btn btn-color-2 project-btn"
+            onclick="window.open('./assets/218.png')">
+            Certificate
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+      <p class="section__text_p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container styled-contact-box">
+        <p class="contact-description">
+          I’m always open to meaningful conversations, collaboration, or just a quick hello! <br>
+          Whether it's a project idea, internship opportunity, or book recommendation — drop a message!
+        </p>
+
+        <div class="contact-icons-grid">
+          <div class="contact-item">
+            <img src="./assets/email.png" alt="Email" class="icon contact-icon">
+            <p><a href="mailto:sairam2k04@gmail.com">sairam2k04@gmail.com</a></p>
+          </div>
+          <div class="contact-item">
+            <img src="./assets/665586_phone_512x512.png" alt="Phone" class="icon contact-icon">
+            <p><a href="tel:+919500608655">+91 95006 08655</a></p>
+          </div>
+          <div class="contact-item">
+            <img src="./assets/linkedin.png" alt="LinkedIn" class="icon contact-icon">
+            <p><a href="https://linkedin.com/in/sairam-soundiraradjane" target="_blank">LinkedIn Profile</a></p>
+          </div>
+          <div class="contact-item">
+            <img src="./assets/github.png" alt="GitHub" class="icon contact-icon">
+            <p><a href="https://github.com/Cyborg-2904" target="_blank">GitHub Profile</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container footer_nav"></div>
+          <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skillset">Skillset</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Sairam Soundiraradjane. All Rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

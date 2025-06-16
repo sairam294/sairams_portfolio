@@ -1,0 +1,342 @@
+/* === MEDIA QUERIES FOR ALL SCREEN SIZES === */
+
+/* ===== LARGE SCREENS (DESKTOP) ===== */
+@media screen and (min-width: 1201px) {
+  section {
+    margin: 0 10rem;
+    padding-top: 4vh;
+    height: 96vh;
+  }
+  .article-container article {
+    flex: 1 1 calc(25% - 1rem);
+  }
+  .contact-icons-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ===== MEDIUM SCREENS (TABLET) ===== */
+@media screen and (max-width: 1200px) and (min-width: 768px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+  .section__pic-container {
+    width: 250px;
+    height: 250px;
+  }
+  .article-container article {
+    flex: 1 1 calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+  }
+  .contact-icons-grid {
+    grid-template-columns: 1fr;
+  }
+  .btn-container {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+}
+
+/* ===== SMALL SCREENS (MOBILE - e.g., iPhone SE) ===== */
+@media screen and (max-width: 767px) {
+  html, body {
+    font-size: 14px;
+    overflow-x: hidden;
+  }
+
+  nav {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .logo {
+    font-size: 1.3rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1rem;
+  }
+
+  section {
+    margin: 0 1rem;
+    padding-top: 2rem;
+    height: auto;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .section__text_p1,
+  .section__text_p2 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  #profile {
+    flex-direction: column;
+    gap: 2rem;
+    height: auto;
+  }
+
+  .profile_pic,
+  .profile_text {
+    height: auto;
+    width: 80%;
+    padding: 0;
+  }
+
+  .section__pic-container {
+    width: 160px;
+    height: 160px;
+    margin: auto;
+  }
+
+  .btn-container {
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: center;
+  }
+
+  .section-container,
+  .about-containers,
+  .about-details-container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .about-pic {
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+  }
+
+  .article-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .article-container article {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+
+  .project-img {
+    height: 180px;
+  }
+
+  .details-container.color-container {
+    margin-bottom: 2rem;
+  }
+
+  .contact-icons-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-description {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  footer {
+    height: auto;
+    padding: 1.5rem 1rem;
+  }
+
+  footer p {
+    font-size: 0.85rem;
+    text-align: center;
+  }
+
+  .nav-links-container {
+    justify-content: center;
+  }
+
+  footer .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about-containers {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .details-container.color-container {
+    width: 100%;
+    max-width: 95%;
+    margin: 0 auto;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .section__pic-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+  }
+
+  .section__pic-container img {
+    width: 90vw;
+    height: auto;
+    max-width: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* Only target SKILLS inside experience section */
+  #experience .article-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 per row */
+    gap: 1rem;
+    justify-items: center;
+  }
+
+  #experience .article-container article {
+    width: 100%;
+    max-width: 150px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  section {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  section:last-of-type {
+    border-bottom: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  footer .nav-links {
+    flex-direction: column;
+    gap: 0.75rem;
+    text-align: center;
+  }
+}
+
+
+/* === UPDATED MEDIA QUERIES FOR SKILLS AND IMAGE RESPONSIVENESS === */
+
+/* ===== LARGE SCREENS ===== */
+@media screen and (min-width: 1200px) {
+  .article-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .article-container article {
+    flex: 1 1 calc(25% - 1rem);
+    max-width: calc(25% - 1rem);
+  }
+}
+
+/* ===== TABLETS (768px–1199px) ===== */
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+  .article-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .project-img {
+    height: auto;
+    object-fit: contain;
+    max-height: 300px;
+  }
+}
+
+/* ===== MOBILE DEVICES (≤767px) ===== */
+@media screen and (max-width: 767px) {
+  /* Skills Section - 2 in a row */
+  #skillset .article-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 1fr));
+    gap: 1rem;
+    justify-items: center;
+  }
+
+  #skillset .article-container article {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  /* Fix project/internship images */
+  .project-img {
+    width: 100%;
+    height: auto !important;
+    object-fit: contain;
+    max-height: 220px;
+    border-radius: 10px;
+  }
+
+  .details-container.color-container {
+    width: 100%;
+    max-width: 95%;
+    margin: 0 auto 2rem;
+  }
+}
+/*eflwi*/
+@media screen and (max-width: 767px) {
+  /* Step 1: Make sure the container of the image uses flex and centers content */
+  #experience .article-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Step 2: Center and scale the image */
+  #experience .project-img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    max-height: 220px;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+
+  /* Optional: if the image is inside another div, center that too */
+  #experience .article-container > div {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
